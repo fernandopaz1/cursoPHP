@@ -1,0 +1,21 @@
+div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+
+p {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+p.firstline {
+    text-indent: 20px;
+}
+
+div.php{
+    background: cyan;
+}

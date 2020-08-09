@@ -60,6 +60,12 @@
         </div>
 
         <h2>Comparación de strings</h2>
+        <div>
+            <p class="firstline">
+                Son funciones que comparan dos strings y devuelven 0 si coinciden y 1 sino.
+            </p>
+        </div>
+        
         <h3>strcmp</h3>
 
         <div class="firstline">
@@ -69,7 +75,24 @@
 
         <h3>strcasecmp</h3>
         <div class="firstline">
-            String case compare: compara dos strings sin tener en cuenta diferencias.
+            String case compare: compara dos strings sin tener en cuenta diferencias.<br>
+        </div>
+
+        <div class="php">
+            <?php 
+                $variable1="casa";
+                $variable2="CASA";
+
+                echo "Defino \$variable1=\"casa\" y \$variable2=\"CASA\"<br>";
+                
+                $resultado=strcmp($variable1,$variable2);
+
+                echo "El resultado de compararlos con strcmp es " . $resultado . "<br>";
+
+                $resultado=strcasecmp($variable1,$variable2);
+
+                echo "El resultado de compararlos con strcasecmp es " . $resultado;
+            ?>
         </div>
 
     </body>
